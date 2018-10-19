@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Exercise Tracker | Free Code Camp</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+     
+   </head>
+
+   <body>
+      <div class="container">
+         <h1>Exercise tracker</h1>
+          <form action="/api/exercise/new-user" method="post" id="create-user">
+            <h3>Create a New User</h3>
+            <input id="uname" type="text" name="username" placeholder="username">
+            <input class="btn btn-primary" type="submit" value="Create">
+          </form>
+          <form action="/api/exercise/add" method="post" id="add-exercise">
+            <h3>Add exercises</h3>
+            <input id="uid" type="text" name="userId" placeholder="userId*">
+            <input id="desc" type="text" name="description" placeholder="description*">
+            <input id="dur" type="text" name="duration" placeholder="duration* (mins.)">
+            <input id="dat" type="text" name="date" placeholder="date (yyyy-mm-dd)">
+            <input type="submit" value="Add">
+          </form>
+        <h4>
+          Made with &#10084; by <a href="http://www.freecodecamp.com/jasmeetsohal">jasmeetsohal</a>
+        </h4>
+      
+      </div>
+   </body>
+
+</html>
